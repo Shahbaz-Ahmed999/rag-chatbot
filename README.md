@@ -64,7 +64,7 @@ LLaMA-3 (Groq) → Grounded Answer + Source
 
 **1. Clone the repository**
 ```bash
-git clone https://github.com/yourusername/rag-chatbot.git
+git clone https://github.com/shahbaz-ahmed999/rag-chatbot.git
 cd rag-chatbot
 ```
 
