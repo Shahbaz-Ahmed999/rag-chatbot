@@ -7,7 +7,7 @@ Built with LangChain, ChromaDB, Groq LLaMA-3, and Streamlit.
 ---
 
 ## 🖥️ Live Demo
-[Click here to try the live app](#)
+[Click here to try the live app](https://shahbaz-ahmed999-rag-chatbot-app-evf41x.streamlit.app/)
 
 ---
 
@@ -46,15 +46,17 @@ LLaMA-3 (Groq) → Grounded Answer + Source
 ---
 
 ## 📂 Project Structure
-rag-chatbot/
-├── app.py                  ← Streamlit web interface
-├── documents/              ← PDF source documents
-├── src/
-│   ├── loader.py           ← PDF loading and chunking
-│   ├── vectorstore.py      ← ChromaDB vector store
-│   └── rag_chain.py        ← LLM chain and retrieval
-├── .env                    ← API keys (not pushed to GitHub)
-└── requirements.txt        ← Python dependencies
+
+    rag-chatbot/
+    ├── app.py                  ← Streamlit web interface
+    ├── documents/              ← PDF source documents
+    ├── src/
+    │   ├── loader.py           ← PDF loading and chunking
+    │   ├── vectorstore.py      ← ChromaDB vector store
+    │   └── rag_chain.py        ← LLM chain and retrieval
+    ├── vectorstore_db/         ← Saved ChromaDB vectors
+    ├── .env                    ← API keys (not pushed to GitHub)
+    └── requirements.txt        ← Python dependencies
 
 ---
 
