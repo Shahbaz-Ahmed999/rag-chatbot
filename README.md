@@ -112,5 +112,4 @@ streamlit run app.py
 ## 👤 Author
 
 Shahbaz Ahmed Khan
-[LinkedIn](#) | [GitHub](#)
 
