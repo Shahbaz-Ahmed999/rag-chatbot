@@ -72,8 +72,15 @@ st.caption("Ask about Pakistan's economy, banking, or capital markets — answer
 st.divider()
 
 @st.cache_resource(show_spinner="Loading AI model, please wait...")
-def load_chain():
-    return build_rag_chain()
+def load_chain(force_rebuild=False):
+    return build_rag_chain(force_rebuild=force_rebuild)
+
+if st.sidebar.button("🔄 Rebuild Knowledge Base"):
+    st.cache_resource.clear()
+    st.rerun()
+
+if not os.path.exists("vectorstore_db"):
+    create_vectorstore()
 
 chain, retriever = load_chain()
 
