@@ -76,6 +76,8 @@ def load_chain():
     return build_rag_chain()
 
 if st.sidebar.button("🔄 Rebuild Knowledge Base"):
+    st.cache_resource.clear()
+    st.rerun()
 
 chain, retriever = load_chain()
 
