@@ -79,9 +79,6 @@ if st.sidebar.button("🔄 Rebuild Knowledge Base"):
     st.cache_resource.clear()
     st.rerun()
 
-if not os.path.exists("vectorstore_db"):
-    create_vectorstore()
-
 chain, retriever = load_chain()
 
 st.markdown("**Try a sample question:**")
