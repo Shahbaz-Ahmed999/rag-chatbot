@@ -14,7 +14,7 @@ Built with LangChain, ChromaDB, Groq LLaMA-3, and Streamlit.
 ## 📌 What This Project Does
 
 - Ingests Pakistani financial documents (PDFs)
-- Splits them into 482 searchable chunks
+- Splits them into 7,588 searchable chunks
 - Converts chunks into semantic vectors using HuggingFace embeddings
 - Stores vectors in a local ChromaDB vector database
 - Accepts user questions and retrieves the most relevant chunks
